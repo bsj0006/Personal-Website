@@ -1,20 +1,126 @@
 <!DOCTYPE html>
 <html>
-<link rel="icon" href="icon.png" sizes="16x16 64x64" type="image/png">
-<link rel="stylesheet" href="index.css" type="text/css">
-<body>
+<head>
+    <title>Bradley</title>
+    <link rel="icon" href="BSJ32.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="cssheets/index.css" type="text/css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" type="text/css">
+    <meta></meta>
+    
+</head>
 
-    <div class="layer1">
-    <h1>Bradley Johnson</h1></div>
-    <div class="layer2">
-    <p>How did you find my website???</p><br><br>
-    <p></p>
-    <p><a href="https://bsj0006.github.io/HexClockProject/">Hexadecimal Clock Project</a></p>
+<body>
+    <ul class="w3-navbar w3-xlarge w3-blue w3-left-align w3-top">
+        <li class="w3-hide-medium w3-hide-large">
+            <a href="#" onclick="expand('smallnav')">☰</a>
+        </li>
+        <li class="w3-hide-small w3-hover-none"><a href="#Home">Home</a></li>
+        <li class="w3-hide-small w3-hover-none"><a href="#Projects">Projects</a></li>
+        <li class="w3-hide-small"><a href="#About">About</a></li>
+        <li class="w3-hide-small"><a href="#Links">Links</a></li>
+        <li class="w3-hide-small"><a href="#More">More</a></li>
+
+        <div id="smallnav" class="w3-dark-grey w3-hide w3-hide-large w3-hide-medium">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Links">Links</a></li>
+            <li><a href="#More">More</a></li>
+        </div>
+    </ul>    
+    <br><br>
+    
+    <div class="w3-container">
+        <div class="w3-panel w3-pale-blue w3-hover-light-blue w3-animate-top w3-leftbar w3-border-blue w3-center">
+            <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-display-topright w3-container">&times;</span>
+            <h1><b>Attention!</b></h1>
+            <p>This site is under heavy construction.</p>
+        </div> 
+        
+        <div id ="Home" class="w3-card-4 w3-padding w3-margin w3-border">
+            <header class="w3-center w3-blue w3-border w3-margin-bottom">
+                <h1><b>Welcome!</b></h1>
+            </header>
+        </div>
+        
+        <div id ="Projects" class="w3-card-4 w3-padding w3-margin w3-border">
+            <header class="w3-center w3-blue w3-border w3-margin-bottom">
+                <h1><b>Projects</b></h1>
+            </header>
+        </div>
+            
+        <div id ="About" class="w3-card-4 w3-padding w3-margin w3-border">
+            <header class="w3-center w3-blue w3-border w3-margin-bottom">
+                <h1><b>About Me</b></h1>
+            </header>
+        </div>
+
+        <div id ="Links" class="w3-card-4 w3-padding w3-margin w3-border">
+            <header class="w3-center w3-blue w3-border w3-margin-bottom">
+                <h1><b>Related Sites</b></h1>
+            </header>
+            <ul class="w3-ul w3-pale-blue w3-center w3-large">
+                <li class="w3-hover-light-blue w3-padding-large"><a href="mailto:bsj0006@uah.edu">E-Mail</a></li>
+                <li class="w3-hover-light-blue w3-padding-large"><a href="https://www.linkedin.com/in/bradley-johnson-1a3192116">LinkedIn</a></li>
+                <li class="w3-hover-light-blue w3-padding-large"><a href="https://github.com/bsj0006">GitHub</a></li>
+            </ul>
+        </div>
+        <div id ="More" class="w3-card-4 w3-padding w3-margin w3-border">
+            <header class="w3-center w3-blue w3-border w3-margin-bottom">
+                <h1><b>Give Me you Feedback</b></h1>
+            </header>
+            <p class="w3-padding-jumbo w3-large"> Help me improve this website by leaving some suggestions. What did you like and what didn't you like? What should be added? Is there anything that doesn't work? <br><br>Just hit the button and fill out the form. Every comment and suggestion helps! </p>
+            <footer class="w3-container w3-border-top w3-padding w3-right-align">
+                <button onclick="document.getElementById('OpinionForm').style.display='block'" class="w3-btn w3-blue w3-hover-gray" type="button">Leave Feedback</button>
+            </footer>
+        </div>
     </div>
 </body>
-<footer>
-    <a href="mailto:bsj0006@uah.edu" class="btn1">E-Mail</a>
-    <a href="https://www.linkedin.com/in/bradley-johnson-1a3192116" class="btn1">Linkedin</a>
-    <a href="https://github.com/bsj0006" class="btn1">GitHub</a>
-</footer>
+
+  <div id="OpinionForm" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top" style="max-width:600px">
+      <header class="w3-container w3-blue w3-center"> 
+        <span onclick="document.getElementById('OpinionForm').style.display='none'" 
+              class="w3-closebtn w3-hover-red w3-container w3-display-topright">&times;</span>
+        <h2>Give Me Your Feedback!</h2>
+      </header>
+      <div class="w3-container">
+        <p>Please share your opinion on how this 
+          website could be improved. Your criticism is appreciated. 😄</p>       
+      </div>
+      <form name="contactform" method="post" class="w3-container">
+        <div class="w3-third w3-row-padding">
+          <label>Name</label>
+          <input class="w3-input w3-border w3-hover-border-light-blue w3-hover-light-grey" name="first" type="text" placeholder="First Name" required>
+        </div>
+        <div class="w3-third w3-row-padding">
+          <label><br></label>
+          <input class="w3-input w3-border w3-margin-bottom w3-hover-border-light-blue w3-hover-light-grey" name="second" type="text" placeholder="Second Name" required>
+        </div>
+        <div class="w3-twothird w3-row-padding">
+          <label>E-Mail</label>
+          <input class="w3-input w3-border w3-hover-border-light-blue w3-margin-bottom w3-hover-light-grey" name="eaddress" type="email" placeholder="email@example.com" required> 
+          <label>Comments</label>
+          <textarea rows="4" style="resize:none" class="w3-input w3-border w3-hover-border-light-blue w3-hover-light-grey w3-margin-bottom" name="suggestion" placeholder="Add your suggestions here."></textarea>
+          <input type="submit" id="submit-feedback" class="hidden" value="" style="display:none">
+        </div>
+      </form>
+
+      <footer class="w3-container w3-border-top w3-padding w3-light-grey w3-right-align">
+        <label for="submit-feedback" class="w3-btn w3-blue w3-hover-gray">Submit</label>
+      </footer>
+    </div>
+  </div>
+
+
+<script>
+    function expand(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
 </html>
