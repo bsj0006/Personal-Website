@@ -11,7 +11,7 @@
 <body>
     <ul class="w3-navbar w3-xlarge w3-blue w3-left-align w3-top w3-card-4">
         <li class="w3-hide-medium w3-hide-large">
-            <a onclick="expand('smallnav')">☰</a>
+            <a onclick="expand('smallnav')" href="#">☰</a>
         </li> 
         <li class="w3-hide-small"><a href="#Home">Home</a></li>
         <li class="w3-hide-small"><a href="#Projects">Projects</a></li>
@@ -20,11 +20,11 @@
         <li class="w3-hide-small"><a href="#More">More</a></li>
 
         <div id="smallnav" class="w3-dark-grey w3-hide w3-hide-large w3-hide-medium">
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Links">Links</a></li>
-            <li><a href="#More">More</a></li>
+            <li><a onclick="expand('smallnav')" href="#Home">Home</a></li>
+            <li><a onclick="expand('smallnav')" href="#Projects">Projects</a></li>
+            <li><a onclick="expand('smallnav')" href="#About">About</a></li>
+            <li><a onclick="expand('smallnav')" href="#Links">Links</a></li>
+            <li><a onclick="expand('smallnav')" href="#More">More</a></li>
         </div>
     </ul>    
     <br><br>
@@ -40,9 +40,8 @@
             <header class="w3-center w3-blue w3-border w3-margin-bottom">
                 <h1><b>Welcome!</b></h1>
             </header>
-            <p class="w3-padding-jumbo w3-large"> Help me improve this website by leaving some suggestions. What did you like and what didn't you like? What should be added? Is there anything that doesn't work? <br><br>Just hit the button and fill out the form. Every comment and suggestion helps! </p>
+            <p class="w3-padding-jumbo w3-large">Hello and welcome to my personal website. I have created this as a method of providing more informtion about me and what I have done. I have included a section devoted to my previous works, a section detailed about me, and a section filled with helpful links.</p>
             <footer class="w3-container w3-border-top w3-padding w3-right-align">
-                <button onclick="document.getElementById('OpinionForm').style.display='block'" class="w3-btn w3-blue w3-hover-gray" type="button">Leave Feedback</button>
             </footer>
         </div>
         
@@ -53,7 +52,6 @@
             </header>
             <p class="w3-padding-jumbo w3-large"> Help me improve this website by leaving some suggestions. What did you like and what didn't you like? What should be added? Is there anything that doesn't work? <br><br>Just hit the button and fill out the form. Every comment and suggestion helps! </p>
             <footer class="w3-container w3-border-top w3-padding w3-right-align">
-                <button onclick="document.getElementById('OpinionForm').style.display='block'" class="w3-btn w3-blue w3-hover-gray" type="button">Leave Feedback</button>
             </footer>
         </div>
             
@@ -62,9 +60,11 @@
             <header class="w3-center w3-blue w3-border w3-margin-bottom">
                 <h1><b>About Me</b></h1>
             </header>
-            <p class="w3-padding-jumbo w3-large"> Help me improve this website by leaving some suggestions. What did you like and what didn't you like? What should be added? Is there anything that doesn't work? <br><br>Just hit the button and fill out the form. Every comment and suggestion helps! </p>
+            <p class="w3-padding-jumbo w3-large">My name is Bradley Sawyer Johnson. I was born and raised around Montgomery, Alabama. I first started using computers when I was young with small educational games. I became more familiar with using computers through technology classes and clubs during elementary and middle school. These gave me skills using common work applications such as Word, PowerPoint, and Excel in my classes and basic programming through clubs. In high school, I took my first computer science course introducing me to the occupation. After learning HTML, Java, and core computer science concepts, I was convinced of my future in computer science. 
+            <br><br>
+            Currently, I am an undergraduate student at the University of Alabama in Huntsville seeking a bachelor's degree in computer science and a bachelor's degree in mathematics. One of biggest interests right now is machine learning and its capabilities especially when applied to cybersecurity. Computer science has given me an understanding and fondness problem-solving. It is always incredibly satisfying when a difficult, sanity-draining issue is resolved. Currently, I am searching for opportunities to apply the knowledge and skills I've gained into larger-scale projects while expanding my     knowledge and skills.
+            </p>
             <footer class="w3-container w3-border-top w3-padding w3-right-align">
-                <button onclick="document.getElementById('OpinionForm').style.display='block'" class="w3-btn w3-blue w3-hover-gray" type="button">Leave Feedback</button>
             </footer>
         </div>
 
@@ -73,11 +73,16 @@
             <header class="w3-center w3-blue w3-border w3-margin-bottom">
                 <h1><b>Related Sites</b></h1>
             </header>
-            <ul class="w3-ul w3-pale-blue w3-center w3-large">
-                <li class="w3-hover-light-blue w3-padding-large"><a href="mailto:bsj0006@uah.edu">E-Mail</a></li>
-                <li class="w3-hover-light-blue w3-padding-large"><a href="https://www.linkedin.com/in/bradley-johnson-1a3192116">LinkedIn</a></li>
-                <li class="w3-hover-light-blue w3-padding-large"><a href="https://github.com/bsj0006">GitHub</a></li>
-            </ul>
+            <p class="w3-padding-jumbo w3-large">
+            Provided below are various links for contacting me, viewing my professional profile, and visiting my public repository. More may be added in the future as the need arises. If you cannot find a link here that you think should be displayed, please e-mail me about it or navigate to the More section of this site.
+            </p>
+            <footer class="w3-container w3-border-top w3-padding w3-right-align">
+                <ul class="w3-ul w3-pale-blue w3-center w3-large">
+                    <li class="w3-hover-light-blue w3-padding-large"><a href="mailto:bsj0006@uah.edu">E-Mail</a></li>
+                    <li class="w3-hover-light-blue w3-padding-large"><a href="https://www.linkedin.com/in/bradley-johnson-1a3192116">LinkedIn</a></li>
+                    <li class="w3-hover-light-blue w3-padding-large"><a href="https://github.com/bsj0006">GitHub</a></li>
+                </ul>
+            </footer>
         </div>
         
         <div id ="More"><br><br></div>
@@ -87,7 +92,7 @@
             </header>
             <p class="w3-padding-jumbo w3-large"> Help me improve this website by leaving some suggestions. What did you like and what didn't you like? What should be added? Is there anything that doesn't work? <br><br>Just hit the button and fill out the form. Every comment and suggestion helps! </p>
             <footer class="w3-container w3-border-top w3-padding w3-right-align">
-                <button onclick="document.getElementById('OpinionForm').style.display='block'" class="w3-btn w3-blue w3-hover-gray" type="button">Leave Feedback</button>
+                <button disabled onclick="document.getElementById('OpinionForm').style.display='block'" class="w3-btn w3-blue w3-hover-gray" type="button">Leave Feedback</button>
             </footer>
         </div>
     </div>
@@ -104,7 +109,7 @@
         <p>Please share your opinion on how this 
           website could be improved. Your criticism is appreciated. 😃</p>       
       </div>
-      <form name="contactform" method="post" class="w3-container">
+      <form name="contactform" method="post" action="submit.php" class="w3-container">
         <div class="w3-third w3-row-padding">
           <label>Name</label>
           <input class="w3-input w3-border w3-hover-border-light-blue w3-hover-light-grey" name="first" type="text" placeholder="First Name" required>
@@ -117,7 +122,7 @@
           <label>E-Mail</label>
           <input class="w3-input w3-border w3-hover-border-light-blue w3-margin-bottom w3-hover-light-grey" name="eaddress" type="email" placeholder="email@example.com" required> 
           <label>Comments</label>
-          <textarea rows="4" style="resize:none" class="w3-input w3-border w3-hover-border-light-blue w3-hover-light-grey w3-margin-bottom" name="suggestion" placeholder="Add your suggestions here."></textarea>
+          <textarea rows="4" style="resize:none" class="w3-input w3-border w3-hover-border-light-blue w3-hover-light-grey w3-margin-bottom" name="suggestion" placeholder="Add your suggestions here." required></textarea>
           <input type="submit" id="submit-feedback" class="hidden" value="" style="display:none">
         </div>
       </form>
