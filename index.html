@@ -4,21 +4,7 @@
     <title>Bradley</title>
     <link rel="icon" href="BSJ32.png" sizes="32x32" type="image/png">
     <link rel="stylesheet" href="w3.css" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<style> 
-        @media screen and (min-device-width: 720px) {
-    html{
-        background-image:url("background1.jpg");
-        background-size:cover;
-        background-attachment:fixed;
-        background-position:center;
-        background-repeat:no-repeat;   
-    }
-    .w3-card,.w3-card-4{
-        background-color:#ffffff
-    }
-</style>-->
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
 </head>
 
 <body>
@@ -29,37 +15,37 @@
         <li class="w3-hide-small"><a href="#Home">Home</a></li>
         <li class="w3-hide-small"><a href="#Projects">Projects</a></li>
         <li class="w3-hide-small"><a href="#About">About</a></li>
-        <li class="w3-hide-small"><a href="#Links">Links</a></li>
         <li class="w3-hide-small"><a href="#More">More</a></li>
+        <li class="w3-hide-small"><a href="#bottombar">Links</a></li>
 
         <div id="smallnav" class="w3-dark-grey w3-hide w3-hide-large w3-hide-medium">
             <li><a onclick="expand('smallnav')" href="#Home">Home</a></li>
             <li><a onclick="expand('smallnav')" href="#Projects">Projects</a></li>
             <li><a onclick="expand('smallnav')" href="#About">About</a></li>
-            <li><a onclick="expand('smallnav')" href="#Links">Links</a></li>
             <li><a onclick="expand('smallnav')" href="#More">More</a></li>
+            <li><a onclick="expand('smallnav')" href="#bottombar">Links</a></li>
         </div>
     </ul>
-    <br><br><br>
     
-    <div class="w3-container">
-        <div class="w3-panel w3-pale-red w3-hover-light-blue w3-animate-top w3-leftbar w3-border-red w3-center">
+    <div class="w3-container" style="background-color:#edfbff">
+	<br><br>
+        <!-- <div class="w3-panel w3-pale-red w3-hover-light-blue w3-animate-top w3-leftbar w3-border-red w3-center">
             <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-display-topright w3-container">&times;</span>
             <h1><b>Attention!</b></h1>
             <p>This site is under heavy construction.</p>
-        </div> 
+        </div> --> 
         <div id ="Home"><br><br></div>
-        <div class="w3-card-4 w3-padding w3-margin w3-border">
+        <div class="w3-white w3-card-4 w3-padding w3-margin w3-border">
             <header class="w3-center w3-blue w3-border w3-margin-bottom">
                 <h1><b>Welcome</b></h1>
             </header>
-            <p class="w3-large">Hello and welcome to my personal website. I have created this as a method of providing more informtion about me and what I have done. I have included a section devoted to my previous works, a section detailed about me, and a section filled with helpful links.</p>
+            <p class="w3-large">Hello and welcome to my personal website. I have created this as a method of providing more informtion about me and what I have done. I have included a section devoted to my previous works, a section detailed about me, and several links at the bottom to my email and other pages.</p>
             <footer class="w3-container w3-border-top w3-padding w3-right-align">
             </footer>
         </div>
         
         <div id ="Projects"><br><br></div>
-        <div class="w3-card-4 w3-padding w3-margin w3-border">
+        <div class="w3-white w3-card-4 w3-padding w3-margin w3-border">
             <header class="w3-center w3-blue w3-border w3-margin-bottom">
                 <h1><b>Projects</b></h1>
             </header>
@@ -101,7 +87,7 @@
         </div>
             
         <div id ="About"><br><br></div>    
-        <div class="w3-card-4 w3-padding w3-margin w3-border">
+        <div class="w3-white w3-card-4 w3-padding w3-margin w3-border">
             <header class="w3-center w3-blue w3-border w3-margin-bottom">
                 <h1><b>About</b></h1>
             </header>
@@ -113,8 +99,8 @@
             </footer>
         </div>
 
-        <div id ="Links"><br><br></div>
-        <div class="w3-card-4 w3-padding w3-margin w3-border">
+        <!-- <div id ="Links"><br><br></div>
+        <div class="w3-white w3-card-4 w3-padding w3-margin w3-border">
             <header class="w3-center w3-blue w3-border w3-margin-bottom">
                 <h1><b>Related Sites</b></h1>
             </header>
@@ -129,10 +115,11 @@
 					<li class="w3-pale-blue w3-card w3-hover-light-blue w3-leftbar w3-border-blue w3-center w3-xlarge w3-padding"><a href="https://github.com/bsj0006">GitHub</a></li>
 				</ul>
             </footer>
-        </div>
+        </div> -->
         
         <div id ="More"><br><br></div>
-        <div class="w3-card-4 w3-padding w3-margin w3-border">
+        <div class="w3-white w3-card-4 w3-padding w3-margin w3-border">
+		
             <header class="w3-center w3-blue w3-border w3-margin-bottom">
                 <h1><b>Feedback</b></h1>
             </header>
@@ -141,12 +128,15 @@
                 <button onclick="document.getElementById('OpinionForm').style.display='block'" class="w3-btn w3-blue w3-hover-gray" type="button">Leave Feedback</button>
             </footer>
         </div>
+		
+		<div class="w3-border w3-white w3-card-4 w3-center w3-display-container" id="bottombar">
+			<!-- <div class="w3-display-bottomright w3-padding w3-tiny">Last Updated: 1/24/2017</div>
+			<div class="w3-display-topright w3-padding w3-tiny">Designed by Bradley Johnson</div> -->
+			<a href="mailto:bsj0006@uah.edu"><img src="ic_mail_black_48dp_1x.png" alt="E-Mail" height="36" width = "36" title="E-mail" style="padding:2px; margin:2px 10px 0px 10px" class=""></a>
+			<a href="https://github.com/bsj0006"><img src="GitHub-Mark-32px.png" alt="Github" height="36" width = "36" title="Github" style="padding:2px; margin:2px 10px 0px 10px" class=""></a>
+			<a href="https://www.linkedin.com/in/bradley-johnson-1a3192116"><img src="In-Black-34px-TM.png" alt="LinkedIn" height="36" width = "44" title="LinkedIn" style="padding:2px 0px 2px 2px; margin:2px 2px 0px 10px" class=""></a>
+		</div>
     </div>
-	<div id="bottombar" class="w3-bottom">
-		<a href="https://github.com/bsj0006">
-			<img src="GitHub-Mark-64px.png" alt="Github" height="36" width = "36" title="Github" style="padding:2px;margin:0px 10px" class="w3-white w3-round w3-card-4">
-		</a>
-	</div>
 </body>
 
   <div id="OpinionForm" class="w3-modal">
