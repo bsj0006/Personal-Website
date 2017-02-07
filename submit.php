@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = ($_POST["eaddress"]); 
     $comment = ($_POST["suggestion"]);
     $message.= "This suggestion is from ".$name.".\n\n";
-    $message.= $comment.".\n\n"."You can reply at ".$email.".";    
+    $message.= $comment."\n\n"."You can reply at ".$email.".";    
     mail($dest, $subject, $message);
 }
 ?>
